@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp" >
+
+    <Button
+        android:id="@+id/gameItemsButton_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/label_cancel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/gameItemsButton_done" />
+
+    <Button
+        android:id="@+id/gameItemsButton_addItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/label_additem"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_above="@+id/gameItemsButton_cancel"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/enterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/hint_additem"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+<Button
+        android:id="@+id/gameItemsButton_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameItemsButton_cancel"
+        android:layout_alignBottom="@+id/gameItemsButton_cancel"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/label_next"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="275dp"
+        android:layout_height="204dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enterText">
+
+    </ListView>
+    
+</RelativeLayout>
+<!-- From: file:/C:/UBC/submitted/submitted2/ScavengerHuntGame/res/layout/game_items.xml -->

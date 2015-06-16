@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.annemac.scavengerhuntapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ScavengerHuntApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        Login activity is started when the StartActivity is done with
+        Parse.com initialization
+        -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="Main Menu" >
+        </activity>
+        <activity
+            android:name=".NewGameActivity"
+            android:label="New Game" >
+        </activity>
+        <activity
+            android:name=".GameItemsActivity"
+            android:label="Game Items" >
+        </activity>
+        <activity
+            android:name=".GamePlayersActivity"
+            android:label="View Game Players" >
+        </activity>
+        <activity
+            android:name=".MyGamesList"
+            android:label="My Game List" >
+        </activity>
+        <activity
+            android:name=".ViewGameActivity"
+            android:label="View a Game" >
+        </activity>
+        <activity
+            android:name=".EditGameInfoActivity"
+            android:label="Edit Game" >
+        </activity>
+        <activity
+            android:name=".EditPlayersActivity"
+            android:label="Edit Game Players" >
+        </activity>
+        <activity
+            android:name=".EditGameItemsActivity"
+            android:label="Change Game Items" >
+        </activity>
+        <activity
+            android:name=".InvitedGamesActivity"
+            android:label="Invited Games" >
+        </activity>
+        <activity
+            android:name=".GamePlayingActivity"
+            android:label="Play Game" >
+        </activity>
+        <activity
+            android:name=".JoinGamesActivity"
+            android:label="Join a Game" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".PhotoIntentActivity"
+            android:label="Take Picture" >
+        </activity>
+        <activity
+            android:name=".DisplayPicturesActivity"
+            android:label="@string/title_activity_display_pictures" >
+        </activity>
+        <activity
+            android:name=".SingleItemView"
+            android:label="@string/title_activity_display_pictures" >
+        </activity>
+    </application>
+
+</manifest>

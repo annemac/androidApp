@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="5dp"
+  
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/welcome"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/label_selectOption"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+        <Button
+         android:id="@+id/newGameButton_name"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+         android:gravity="center"
+         android:text="@string/label_newgame"
+         android:textSize="18sp"
+         android:textStyle="normal"
+        android:layout_marginBottom="10dp"
+         />
+
+    <Button
+        android:id="@+id/mainMenuButton_joinGame"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:text="@string/label_joingame"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"
+        />
+
+        <Button
+         android:id="@+id/mainMenuButton_myGames"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+         android:gravity="center"
+         android:text="@string/label_mygames"
+         android:textSize="18sp"
+         android:textStyle="normal"
+        android:layout_marginBottom="10dp"
+         />
+
+</LinearLayout>
+
+   
+
+<!-- From: file:/C:/UBC/submitted/submitted2/ScavengerHuntGame/res/layout/main_menu.xml -->

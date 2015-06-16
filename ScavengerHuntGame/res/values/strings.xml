@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidScavengerApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="splash_welcome">Scanvenger hunt game! Welcome</string>
+    <string name="itemNamelabel">found </string>
+  <string name="welcome">Game welcome</string>
+
+
+    <!-- Generic -->
+    <string name="label_cancel">Cancel</string>
+    <string name="label_login">Login</string>
+    <string name="label_done">Save</string>
+    <string name="label_continue">Save</string>
+    <string name="label_next">Continue</string>
+
+    <string name="label_back">Back</string>
+
+      <string name="parse_app_id">q9H5YgQuLTsHavPxYSACDj7pMpHrIYkn2ivocYZ7</string>
+    <string name="parse_client_id">5IpIEAKhgo8DMvaTze6mA2653creZeSfN7dRjkEC</string>
+
+  <!-- resource for cammera Options -->
+  
+     <string name="btnIntend">Take (big) Picture</string>
+    <string name="btnIntendS">Take (small) Picture</string>
+    <string name="btnIntendV">Take Video</string>
+    <string name="btn_viewGamePhoto">Pictures</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+    
+    <!-- resource for Menu Options -->
+    <string name="option_menu_about">About</string>
+    <string name="option_menu_prefs">Preferences</string>
+    <string name="option_menu_refresh">Refresh</string>
+    <string name="option_menu_logout">Log out</string>
+
+    <!-- resource propertgies for Login Screen -->
+    <string name="label_enterUsernamePasswordEmail">Enter your username, password and email</string>
+    <string name="label_username">Username</string>
+    <string name="hint_username">Enter username</string>
+    <string name="label_password">Password</string>
+    <string name="hint_password">Enter password</string>
+    <string name="label_email">Email</string>
+    <string name="hint_email">Enter your EMAIL</string>
+    <string name="label_loginInProgress">Login in progress...</string>
+    <string name="label_loginPleaseWait">Please wait...</string>
+    <string name="label_signupInProgress">Sign up in progress for new user</string>
+  
+     <string name="label_queryErrorMessage">User query error.</string>
+    <string name="label_signupErrorMessage">User signup error.</string>
+  
+    <string name="label_searchingForUsers">Searching for user</string>
+     <string name="label_loginErrorMessage">Login error:  </string>
+    <string name="label_loginPleaseTryAgainMessage">Please try again</string>
+    <string name="label_loginUsernameAlreadyExists">Already a user with that username.  Please choose a new username</string>
+    <string name="label_loginEmailAlreadyExists">Already a user with that email address.  Please choose a new email</string>
+    <string name="label_selectOption">What would you like to do?</string>
+    <string name="label_newgame">Start a New Game</string>
+    <string name="label_mygames">View My Games</string>
+    <string name="label_gamesiamplaying">View Games I am Playing</string>
+    <string name="label_joingame">Join a Game</string>
+
+    <!-- resource properties for New Game Create -->
+    <string name="prompt_newgamename">Name your new game.</string>
+    <string name="hint_newgamename">New game name</string>
+    <string name="label_createGame">Create New Game</string>
+    <string name="hint_startDate">Start Date</string>
+    <string name="hint_startTime">Start Time</string>
+    <string name="hint_endDate">End Date</string>
+    <string name="hint_endTime">End Time</string>
+    <string name="hint_newGameName">Scanvenger Hunt Game</string>
+    <string name="label_startDatetime">Enter Start Date and Time:</string>
+    <string name="label_endDatetime">Enter End Date and Time:</string>
+    <string name="button_create">Create</string>
+
+    <!-- resource properties  create a new game and set up time -->
+    <string name="header_itemlist">Items to find for this game:</string>
+    <string name="label_additem">Add Game Items:</string>
+    <string name="hint_additem">Add item?</string>
+    <string name="hint_newgamestartdate">Enter game start date</string>
+    <string name="hint_newgameenddate">Enter game end date</string>
+    <string name="label_gameName">Game Name:</string>
+
+    <!-- resource properties for my Game List -->
+    <string name="label_itemList">GAME ITEMS</string>
+    <string name="button_edit">Edit</string>
+    <string name="label_currentGamePlayers">PLAYERS</string>
+    <string name="button_back">Back</string>
+    <string name="header_gamelist">Game List</string>
+    <string name="hint_addplayer">Add Player hint</string>
+    <string name="label_addplayer">Add Player label</string>
+    <string name="header_playerlist">Player List</string>
+    <string name="header_mygameslist">My Games</string>
+    <string name="mygameslistButton_menu">Back to Menu</string>
+    <string name="label_menu">Back to Menu</string>
+
+    <!-- resource properties for changing a  Game -->
+    <string name="label_gamePlayerList">Player List:</string>
+    <string name="label_currentGameItems">Items</string>
+    <string name="editgamebutton_edititems">Edit Items</string>
+    <string name="button_save">Save</string>
+    <string name="editgamebutton_editplayers">Edit Players</string>
+    <string name="button_addItem">Add Item</string>
+    <string name="button_mainmenu">Main Menu</string>
+    <string name="hint_addItem">Type Item here</string>
+    <string name="label_editgamenametime">Save Changes</string>
+     <string name="title_activity_invited_game">Invited Games</string>  
+    <string name="button_edititems">Edit Items</string>
+    <string name="header_Currentgameslist">Current Games</string>
+    <string name="title_activity_game_hub">Games</string>
+    <string name="invited_games_instructions">Select a game to Play</string>
+    <string name="button_update">Update</string>
+
+    <!-- Found Item Dialog -->
+    <string name="dialog_found">Yes, found it!</string>
+    <string name="dialog_cancel">Cancel</string>
+     <string name="youWin">Congratulations! You are winner for this game!</string>
+    <string name="noInvitedGames">Sorry. You have not been invited to any games yet.</string>
+    <string name="title_activity_photo_intent">PhotoIntentActivity</string>
+    <string name="winner">someone just won. Thanks for playing!</string>
+    <string name="timedOut">Game timed out.</string>
+    <string name="title_activity_display_pictures">DisplayPicturesActivity</string> 
+    
+     
+</resources>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_newgamecreate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:layout_margin="5dp">   
+  
+    <TextView
+        android:id="@+id/label_gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gameName"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editGameName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gameName"
+        android:hint="@string/hint_newGameName"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/label_startDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editGameName"
+        android:text="@string/label_startDatetime"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editEndDate"
+        android:layout_below="@+id/label_startDatetime"
+        android:hint="@string/hint_startDate"
+        android:inputType="date"
+        android:onClick="showStartDatePickerDialog"/>
+
+    <TextView
+        android:id="@+id/label_endDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStartDate"
+        android:text="@string/label_endDatetime"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label_endDatetime"
+        android:layout_toLeftOf="@+id/editEndTime"
+        android:hint="@string/hint_endDate"
+        android:inputType="date"
+        android:onClick="showEndDatePickerDialog"/>
+
+
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"   />
+
+    <EditText
+        android:id="@+id/editStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/label_startDatetime"
+        android:ems="10"
+        android:hint="@string/hint_startTime"
+        android:inputType="time"
+        android:onClick="showStartTimePickerDialog"/>
+
+    <EditText
+        android:id="@+id/editEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editStartTime"
+        android:layout_below="@+id/label_endDatetime"
+        android:ems="10"
+        android:hint="@string/hint_endTime"
+        android:inputType="time" 
+        android:onClick="showEndTimePickerDialog"/>
+
+    <Button
+        android:id="@+id/newGameButton_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editEndTime"
+        android:layout_marginTop="76dp"
+        android:layout_toRightOf="@+id/view1"
+        android:gravity="center"
+        android:text="@string/label_continue"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/newGameButton_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newGameButton_continue"
+        android:layout_alignBottom="@+id/newGameButton_continue"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/view1"
+        android:gravity="center"
+        android:text="@string/label_cancel"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    
+</RelativeLayout><!-- From: file:/C:/UBC/submitted/submitted2/ScavengerHuntGame/res/layout/new_game_create.xml -->

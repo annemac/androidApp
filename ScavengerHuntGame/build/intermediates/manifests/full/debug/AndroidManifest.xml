@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.annemac.scavengerhuntapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.annemac.scavengerhuntapp.ScavengerHuntApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.annemac.scavengerhuntapp.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        Login activity is started when the StartActivity is done with
+        Parse.com initialization
+        -->
+        <activity
+            android:name="com.annemac.scavengerhuntapp.LoginActivity"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.MainMenuActivity"
+            android:label="Main Menu" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.NewGameActivity"
+            android:label="New Game" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.GameItemsActivity"
+            android:label="Game Items" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.GamePlayersActivity"
+            android:label="View Game Players" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.MyGamesList"
+            android:label="My Game List" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.ViewGameActivity"
+            android:label="View a Game" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.EditGameInfoActivity"
+            android:label="Edit Game" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.EditPlayersActivity"
+            android:label="Edit Game Players" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.EditGameItemsActivity"
+            android:label="Change Game Items" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.InvitedGamesActivity"
+            android:label="Invited Games" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.GamePlayingActivity"
+            android:label="Play Game" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.JoinGamesActivity"
+            android:label="Join a Game" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.annemac.scavengerhuntapp.PhotoIntentActivity"
+            android:label="Take Picture" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.DisplayPicturesActivity"
+            android:label="@string/title_activity_display_pictures" >
+        </activity>
+        <activity
+            android:name="com.annemac.scavengerhuntapp.SingleItemView"
+            android:label="@string/title_activity_display_pictures" >
+        </activity>
+    </application>
+
+</manifest>

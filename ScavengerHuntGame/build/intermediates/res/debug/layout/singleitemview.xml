@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/itemNamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemNamelabel"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/itemName"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/itemName" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" />
+
+</RelativeLayout><!-- From: file:/C:/UBC/submitted/submitted2/ScavengerHuntGame/res/layout/singleitemview.xml -->

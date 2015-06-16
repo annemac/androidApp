@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp" >
+
+    <TextView
+        android:id="@+id/label_gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gameName"
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_gameName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gameName"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/hint_newGameName"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/label_gamePlayerlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/listview_players"
+        android:layout_below="@+id/text_gameName"
+        android:text="@string/label_currentGamePlayers"
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    
+    <ListView
+        android:id="@+id/listview_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_save"
+        android:layout_below="@+id/label_gamePlayerlist" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignBottom="@+id/listview_players"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/darker_gray" />
+  
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/listview_players"
+        android:text="@string/button_save" />
+
+</RelativeLayout><!-- From: file:/C:/UBC/submitted/submitted2/ScavengerHuntGame/res/layout/edit_game_players.xml -->
